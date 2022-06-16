@@ -14,7 +14,7 @@
   <div class="sidebar">
     <div class="logo-details">
         <img src="../img/favicon.png">
-        <div class="logo_name">Admin Dashboard</div>
+        <div class="logo_name ml-2">Halodagri</div>
     </div>
     <ul class="nav-list">
       <li>
@@ -70,53 +70,56 @@
   
   <section class="home-section">
     <div class="content">
-      <div class="container-fluid"></div>  
-        <div class="row">
+      <div class="container-fluid">  
+        <form class="form-inline mt-3">
+          <input class="form-control mr-sm-2" size="100%" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Cari</button>
+        </form>
+        <div class="row mt-3">
           <div class="col-md-12">
-            <h2 class="text-primary">General</h2>
+            <h4 class="text-primary">General</h4>
           </div>
           <div class="col-md-3 sm-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Expert</h5>
                 <p class="card-text">lorem ipsum dolor sit amet, consectetur adip</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="expert.html" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 sm-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">User</h5>
                 <p class="card-text">lorem ipsum dolor sit amet, consectet</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="user.html" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 sm-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">FAQ</h5>
                 <p class="card-text">lorem ipsum dolor sit amet, consectet</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="faq.html" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
           <div class="col-md-3 sm-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">contact</h5>
                 <p class="card-text">lorem ipsum dolor sit amet, consectetur </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="contact.html" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-          </div>
-          
-          <div class="col-md-12">
-            <h2 class="text-primary mt-4">Statistic</h2>
           </div>
         </div>
         <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-primary mt-4">Statistic</h4>
+          </div>
           <div class="col-md-8">
             <div class="card">
               <div class="card-body">
@@ -132,7 +135,6 @@
             </div>
           </div>
         </div>
-            
       </div>
     </div>
   </section>
@@ -140,7 +142,7 @@
   <script>
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
       datasets: [{
