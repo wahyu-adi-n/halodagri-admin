@@ -171,13 +171,17 @@
   left: 250px;
   width: calc(100% - 250px);
 }
+
 .home-section .content{
   display: inline-block;
-  color: #11101d;
-  font-size: 25px;
-  font-weight: 500;
-  margin: 18px
+  margin: 18px;
 }
+
+.home-section .content .card {
+  border-radius: 12px;
+  margin:0;
+}
+
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
