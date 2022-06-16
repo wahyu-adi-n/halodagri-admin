@@ -1,64 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Halodagri Admin</title>
-  <!-- boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <!-- css -->
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
   <div class="sidebar">
-    <div class="logo_content">
-      <div class="logo">
+    <div class="logo-details">
         <img src="../img/favicon.png">
         <div class="logo_name">Admin Dashboard</div>
-      </div>
     </div>
-    <ul class="nav_list">
+    <ul class="nav-list">
       <li>
         <a href="#">
           <i class='bx bx-grid-alt'></i>
-          <span class='links_name'>Dashboard</span>
+          <span class="links_name">Dashboard</span>
         </a>
-      </li>
-        <li>
-        <a href="#">
-          <i class='bx bxs-user-detail'></i>
-          <span class='links_name'>Expert</span>
-        </a>
-      </li>
-        <li>
-        <a href="#">
-          <i class='bx bxs-user'></i>
-          <span class='links_name'>User</span>
-        </a>
+         <span class="tooltip">Dashboard</span>
       </li>
       <li>
-        <a href="#">
-          <i class='bx bx-message-alt-detail'></i>
-          <span class='links_name'>FAQ</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bxs-contact'></i>
-          <span class='links_name'>Contact</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-support'></i>
-          <span class='links_name'>Support</span>
+       <a href="#">
+           <i class='bx bxs-user-detail'></i>
+         <span class="links_name">Expert</span>
+       </a>
+       <span class="tooltip">Expert</span>
+     </li>
+     <li>
+       <a href="#">
+           <i class='bx bxs-user'></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-message-alt-detail'></i>
+         <span class="links_name">FAQ</span>
+       </a>
+       <span class="tooltip">FAQ</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bxs-contact'></i>
+         <span class="links_name">Contact</span>
+       </a>
+       <span class="tooltip">Contact</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-support'></i>
+         <span class="links_name">Support</span>
+       </a>
+       <span class="tooltip">Support</span>
+     </li>
+    <li>
+        <a href="#" class="btn">
+          <i class='bx bxs-chevron-right'></i>
+          <span class='links_name'></span>
         </a>
       </li>
     </ul>
-    <div class="onoff" id="btn">
-      
-    </div>
   </div>
+  <section class="home-section">
+      <div class="text">Dashboard</div>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector(".btn");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
 </body>
 </html>
