@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap 4.5 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <img src="../img/favicon.png">
+        <div class="logo_name ml-2">Halodagri</div>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="expert.html">
+           <i class='bx bxs-user-detail'></i>
+         <span class="links_name">Expert</span>
+       </a>
+       <span class="tooltip">Expert</span>
+     </li>
+     <li>
+       <a href="user.html">
+           <i class='bx bxs-user'></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="faq.html">
+         <i class='bx bx-message-alt-detail'></i>
+         <span class="links_name">FAQ</span>
+       </a>
+       <span class="tooltip">FAQ</span>
+     </li>
+     <li>
+       <a href="contact.html">
+         <i class='bx bxs-contact'></i>
+         <span class="links_name">Contact</span>
+       </a>
+       <span class="tooltip">Contact</span>
+     </li>
+     <li>
+       <a href="support.html">
+         <i class='bx bx-support'></i>
+         <span class="links_name">Support</span>
+       </a>
+       <span class="tooltip">Support</span>
+     </li>
+    <li>
+        <a href="#" class="my-button">
+          <i class='bx bxs-chevron-right'></i>
+          <span class='links_name'></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <section class="home-section">
+    <div class="content">
+      <div class="container-fluid">  
+        <form class="form-inline mt-3">
+          <input class="form-control mr-sm-2" size="100%" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Cari</button>
+        </form>
+      
+        <h4 class="text-primary mt-3">Add Komponen Expert</h4>
+        <div class="row">  
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="jabatan">Jabatan</label>
+                    <input type="text" class="form-control" id="jabatan" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="eselon">Eselon</label>
+                    <input type="text" class="form-control" id="eselon" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="komponen">Komponen</label>
+                    <input type="text" class="form-control" id="komponen" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="ahli">Ahli</label>
+                    <input type="text" class="form-control" id="ahli" required>
+                  </div>
+                  <button type="reset" class="btn btn-danger">Reset</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector(".my-button");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+  });
+  </script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery-3.4.1.slim.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
