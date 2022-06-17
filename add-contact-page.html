@@ -76,88 +76,27 @@
             <button class="btn btn-primary" type="submit">Cari</button>
         </form>
       
-      
-        <h4 class="text-primary mt-3">Contact Table</h4>
-        <a href="add-contact-page.html" class="btn btn-success btn-sm mb-2">
-          <i class='bx bx-plus'></i>Tambah</a>
+        <h4 class="text-primary mt-3">Add Contact</h4>
         <div class="row">  
           <div class="col-md-12">
             <div class="card">
               <div class="card-body">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Platform</th>
-                        <th scope="col">Contact</th>
-                        <th scope="col">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Email</td>
-                        <td>halodagri@gmail.com</td>
-                        <td>
-                          <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Archive">
-                            <i class='bx bxs-archive'></i>
-                          </a>
-                          <a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Lihat Detail">
-                            <i class='bx bxs-show'></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Call</td>
-                        <td>021234432</td>
-                        <td>
-                          <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Archive">
-                            <i class='bx bxs-archive'></i>
-                          </a>
-                          <a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Lihat Detail">
-                            <i class='bx bxs-show'></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Whatsapp</td>
-                        <td>089987765001</td>
-                        <td>
-                          <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Archive">
-                            <i class='bx bxs-archive'></i>
-                          </a>
-                          <a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Lihat Detail">
-                            <i class='bx bxs-show'></i>
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                  
+                <form>
+                  <div class="form-group">
+                    <label for="platform">Platform</label>
+                    <input type="text" class="form-control" id="platform" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="kontak">Kontak</label>
+                    <input type="text" class="form-control" id="kontak" required>
+                  </div>
+                  <button type="reset" class="btn btn-danger">Reset</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
               </div>
             </div>
           </div>   
-          
         </div>
-
       </div>
     </div>
   </section>
